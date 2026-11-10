@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOTIONX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">M</span><span>MOTION<span class="accent">X</span></span><small>AFTER EFFECTS TOOLKIT</small></div>
+      <button id="refreshBtn" class="icon-btn" title="Refresh presets">↻</button>
+    </header>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="side-label">LIBRARY</div>
+        <nav id="categoryNav">
+          <button class="nav-item active" data-category="Transitions"><span>⇄</span>Transitions</button>
+          <button class="nav-item" data-category="Effects"><span>✧</span>Effects</button>
+          <button class="nav-item" data-category="Shakes"><span>〰</span>Shakes</button>
+          <button class="nav-item" data-category="Color Grading"><span>◐</span>Color grading</button>
+          <button class="nav-item" data-category="Text Animation"><span>T</span>Text animation</button>
+          <button class="nav-item" data-category="Graphs"><span>⌁</span>Graphs</button>
+          <button class="nav-item" data-category="Text Effects"><span>▣</span>Text effects</button>
+          <button class="nav-item" data-category="My Presets"><span>＋</span>My presets</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="side-label">WORKSPACE</div>
+          <div class="hint">Select a layer in your active composition, then apply a preset.</div>
+          <div class="version">MOTIONX • v0.1.0</div>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="page-head">
+          <div><div class="eyebrow">PRESET LIBRARY</div><h1 id="categoryTitle">Transitions</h1><p id="categoryDesc">Add motion to your edits in one click.</p></div>
+          <button id="addPresetBtn" class="primary-btn">＋ Import preset</button>
+        </div>
+        <div class="toolbar">
+          <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search presets..."></div>
+          <div class="toolbar-right"><span id="presetCount">0 PRESETS</span></div>
+        </div>
+        <div id="notice" class="notice">Select a preset to apply it to your selected After Effects layer.</div>
+        <section id="presetGrid" class="preset-grid">
+          <div class="empty-state"><div class="empty-icon">✧</div><h3>Your library starts here</h3><p>Import an After Effects <b>.ffx</b> preset to add it to this category.</p></div>
+        </section>
+        <footer class="footer"><span>Designed for your workflow.</span><span id="activeCategory">TRANSITIONS</span></footer>
+      </main>
+    </div>
+  </div>
+  <script src="js/cep-bridge.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
