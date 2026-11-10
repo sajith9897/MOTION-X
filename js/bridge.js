@@ -1,0 +1,1 @@
+(function(g){g.MXBridge={eval:function(s,cb){if(g.__adobe_cep__&&g.__adobe_cep__.evalScript)g.__adobe_cep__.evalScript(s,cb||function(){});else if(cb)cb('NO_CEP_HOST');},isCEP:function(){return !!(g.__adobe_cep__&&g.__adobe_cep__.evalScript);}};})(window);

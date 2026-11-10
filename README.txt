@@ -1,30 +1,9 @@
-MOTIONX v0.1.1 — After Effects 2024 starter extension
+MOTIONX v0.2.0 — Adobe After Effects 2024
+Install by copying this folder into %APPDATA%\Adobe\CEP\extensions\ and enabling CEP PlayerDebugMode under HKCU\Software\Adobe\CSXS.11. Restart AE and open Window > Extensions (Legacy) > MOTIONX.
 
-INSTALLATION (Windows / AE 2024)
-1. Extract this ZIP.
-2. Open the extracted MOTIONX_AE_Extension folder.
-3. Double-click install_windows.bat. It copies this folder to:
-   %APPDATA%\Adobe\CEP\extensions\MOTIONX_AE_Extension
-4. Double-click enable_cep_debug.reg and approve the registry change.
-5. Completely close After Effects, then reopen After Effects 2024.
-6. Open Window > Extensions (Legacy) > MOTIONX.
+Included in this build: custom category creation, preset import/list/search, right-click preset rename/delete, theme settings (blue/violet/emerald/mono), editable brand name, intensity and duration sliders, easing curve selection and curve preview, apply selected .ffx to selected layers.
 
-CHECK INSTALL PATH
-This file must exist:
-%APPDATA%\Adobe\CEP\extensions\MOTIONX_AE_Extension\CSXS\manifest.xml
-There must NOT be an extra MOTIONX_AE_Extension folder between extensions and CSXS.
+Important limitations: generic .ffx files do not expose universal intensity/duration controls. The sliders are currently UI controls only; the host receives their values but does not rescale arbitrary preset keyframes. The curve graph is a preview and easing selector, not yet a draggable Bezier graph editor. Preset thumbnails are not yet importable/persistently associated in this build. Custom category navigation is session-based; folders persist on disk but the UI does not yet discover custom folders on next launch. These need the next engineering iteration and preset-specific adapters.
 
-FEATURES IN THIS STARTER
-- Eight preset sections.
-- Import .ffx files into Documents\MOTIONX\Presets\<category>.
-- List imported .ffx presets and apply them to selected layers.
-
-LIMITS
-This is a starter, not a complete commercial preset pack. It does not include
-third-party Jerryflow / AB FX Pro assets. The categories are library sections;
-transition editing workflows, grading sliders, custom graph editor, previews,
-favourites and preset delete/rename are future features. Import your own legally
-obtained or self-created .ffx files.
-
-If the panel is still missing, send a screenshot of Window > Extensions (Legacy)
-and the exact installed path above.
+Right-click a preset card to rename or delete it. Presets live in Documents\MOTIONX\Presets.
+This is an independent implementation; no proprietary Jerryflow or AB FX assets/code are included.
